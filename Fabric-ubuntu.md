@@ -68,10 +68,9 @@ sudo chown root:docker /var/run/docker.sock
 --------------------------------------------------------------
 ```
 vim ~/.bashrc
-```
 export PATH=$PATH:/home/ahmed/Desktop/Fabric/fabric-samples/bin
 source ~/.bashrc
-
+```
 -------------------------------
 test network
 ```
