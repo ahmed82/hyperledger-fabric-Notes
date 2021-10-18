@@ -75,9 +75,18 @@ source ~/.bashrc
 -------------------------------
 test network
 ```
+cd fabric-samples/test-network
+```
 
 ```
-  
-  
-  
-  
+./network.sh up
+./network.sh down
+```
+to print the script help text
+```
+/network.sh -h
+
+```
+
+
+
