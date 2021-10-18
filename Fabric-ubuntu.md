@@ -1,5 +1,5 @@
 
-/98//28659**9814o apt-get install curl
+sudo apt-get install curl
 sudo apt-get install golang
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
