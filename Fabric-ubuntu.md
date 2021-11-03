@@ -86,6 +86,29 @@ to print the script help text
 /network.sh -h
 
 ```
+-----------------------------------------------
+## Create Channal
+
+```
+cd fabric-samples/test-network
+/network.sh up createChannel
+```
+## 
+```
+./network.sh up createChannel -ca -s couchdb -c unccc-hannel
+```
+---------
+
+## Deploy Smart Contract 
+1st export the working directory to PATH
+```
+export PATH=${PWD}/../bin:$PATH
+export FABRIC_CFG_PATH=$PWD/../config/
+```
+
+```
+peer lifecycle chaincode package basic.tar.gz --path ../asset-transfer-basic/chaincode-javascript/ --lang node --label basic_1.0
+```
 
 
 
