@@ -2,9 +2,7 @@ export PATH=export PATH=<path to download location>/bin:$PATH/bin:$PATH
 
 confitx.yaml / for the Fabric arch
 
-
-
-
+## Links
 
 https://hyperledger.github.io/caliper/v0.4.2/installing-caliper/ 
 
@@ -19,3 +17,18 @@ https://kctheservant.medium.com/demo-of-multi-channel-network-in-hyperledger-fab
 
 https://github.com/TheIanSim/FabCar 
 
+-------
+ 
+  ```
+  cd fabric-samples/first-network
+  ./byfn.sh up
+  ```
+  Generate Network Artifacts
+  ```
+  ./byfn.sh generate
+  ```
+  
+  
+  
+  
+  
