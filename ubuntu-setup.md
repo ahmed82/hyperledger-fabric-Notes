@@ -95,7 +95,7 @@ cd fabric-samples/test-network
 ```
 ## 
 ```
-./network.sh up createChannel -ca -s couchdb -c unccc-hannel
+./network.sh up createChannel -ca -s couchdb -c unccc-channel
 ```
 ---------
 
