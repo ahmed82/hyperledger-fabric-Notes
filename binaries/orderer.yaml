@@ -1,0 +1,16 @@
+# Orderer.yaml
+
+Orderer intialaized starting by checking Genesis Block as needed.
+1- look for the orderer.yaml
+as configure environment variable
+```
+FABRIC_CFG_PATH
+```
+Control Model level logging
+```
+export FABRIC_LOGGING_SPEC= INFO
+```
+Control logging format to overwrite the default
+```
+export FABRIC_LOGGING_FORMAT= INFO
+```
