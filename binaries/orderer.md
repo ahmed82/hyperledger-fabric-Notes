@@ -29,3 +29,32 @@ export ORDERER_FILELEDGER_LOCATION=$HOME/ledgers/orderer/com/ledger
 ```
 Orderer binary use levelDB, use the Ledger Folder location to write the block data.
 if Ledger Folder location is set to network drive or to host file system from the VM, error will be throws
+```
+General:  		General properties of the Orderer.
+FileLedger: 	Filesystem location of the block data.
+Consensus:	  Used for managing storage for Orderer type etcdraft
+Kafka: 		    kafka environment setup.
+Debug: 		    Debug information control.
+Operations: 	Operation server info (network monitoring| alerts) & TLS configuration 				for the operations server..
+Metrics:		  Orderer generate metrics info, collected by 3ed party
+	            Metrics provider is one of statesd, Prometheus, or disabled
+ ```             
+All configuration can be overridden at runtime by setting the environment variables:
+```
+ORDERER_GENERAL_...
+ORDERER_FILELEDGER_...
+```
+
+CSP expose the cryptographic functions:
+1- Software CSP
+* Implemented as software libraries
+ 		such as windows DLL or Linux shared object
+2- Hardware CSP 
+* Hardware Security Modules (HSM)
+* Smart Cards
+PKCS#11
+```
+BCCSP:        Blockchain Crypto Service Provider
+  Default: SW		#For Software CSP
+  Default: PKCS11 	#For Hardware CSP
+```
