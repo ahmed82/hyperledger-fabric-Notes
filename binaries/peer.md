@@ -1,4 +1,19 @@
 # peer
+Configuration by using `core.yaml`.
+
+path to configuration file set in:
+```
+FABRIC_CFG_PATH
+```
+
+configuration can be overridden by set environment variable at runtime. as:
+```
+CORE_...
+```
+
+peer [command] [subcommand] --flags
+peer help
+peer [command] help
 ```
 Peer channel create -o localhost:7050 -c myChannel -f $CONFIG_PATH/channel.tx
 Peer node start -o localhost:7050
