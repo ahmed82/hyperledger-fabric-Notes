@@ -23,3 +23,9 @@ peer channel list
 peer channel fetch config -c mychannel -o localhost:7050
 peer channel getinfo -c mychannel
 ```
+
+```
+peer [command] [subcommand] --flags
+peer help
+peer [command] help
+```
