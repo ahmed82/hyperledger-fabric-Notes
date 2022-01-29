@@ -1,7 +1,7 @@
 # hyperledger-fabric-Notes
 
 
-Write-ahead logging
+TODO: Write-ahead logging
 
 
 ```
