@@ -34,11 +34,26 @@ peer channel getinfo -c mychannel
 ```
 1- package
 * Packages the chaincode.
-* 
+```
+peer lifecycle chaincode package $HOME/gocc.1.0-1.0.tar.gz -p opt/chaincode_app --label gocc.1.0-1.0
+```
+The flag -p : for the chaincode code location
+
 2- install
 * installs the chaincode to the specified peer.
-* 
+* peer need to be up
+```
+CC_LABEL=gocc.1.0-1.0
+CC_PACKAGE_FILE=$HOME/$CC_LABEL.tar.gx
+peer lifecycle chaincode install $CC_PACKAGE_FILE
+```
+Check the instalation:
+```
+ls $CORE_PEER_FILESYSTEMPATH/lifecycle/chaincodes/
+```
 3- queryinstalled
 * Lists the installed chaincode on the peer.
-
+```
+peer lifecycle chaincode queryinstalled
+```
 
