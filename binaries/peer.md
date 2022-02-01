@@ -28,3 +28,13 @@ peer channel getinfo -c mychannel
 ```
 
 
+# peer lifecycle chaincode
+```
+ peer lifecycle chaincode <cmd> --flag
+```
+1- package
+* Packages the chaincode
+2- install
+* installs the chaincode to the specified peer
+3- queryinstalled
+* Lists the installed chaincode on the peer
