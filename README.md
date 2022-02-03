@@ -25,11 +25,11 @@ openssl pkcs12 -info -in sk.keystore
 ```
 keytool -v -list -keystore sk.keystore
 ```
-https://www.sslshopper.com/certificate-decoder.html
-https://certlogik.com/decoder/
+* https://www.sslshopper.com/certificate-decoder.html
+* https://certlogik.com/decoder/
 
-C:\Hyperledger-Fabric\fabric-samples\test-network\organizations\ordererOrganizations\example.com\msp
-C:\Hyperledger-Fabric\fabric-samples\test-network\organizations\ordererOrganizations\example.com\orderers\orderer.example.com\msp
+* C:\Hyperledger-Fabric\fabric-samples\test-network\organizations\ordererOrganizations\example.com\msp
+* C:\Hyperledger-Fabric\fabric-samples\test-network\organizations\ordererOrganizations\example.com\orderers\orderer.example.com\msp
 ```
 openssl x509 -in cert.pem -text
 ```
