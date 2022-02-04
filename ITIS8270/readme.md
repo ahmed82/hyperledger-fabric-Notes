@@ -11,7 +11,10 @@ Delete the folders
 ```
 ..\fabric-samples\test-network\organizations\ordererOrganizations
 ..\fabric-samples\test-network\organizations\peerOrganizations
-..\fabric-samples\test-network\channel-artifacts
+```
+optional
+```
+..\fabric-samples\test-network\channel-artifacts 
 ```
 
 # 1- Deploy CC
@@ -44,10 +47,13 @@ peer chaincode query -C mychannel -n basic -c '{"Args":["GetAllAssets"]}'
 cd asset-transfer-basic/application-javascript
 npm install
 ```
-## review the certificate
+## read the certificate
 C:\Users\1426391\Desktop\Desktop\test\fabric-samples\test-network\organizations\peerOrganizations\org1.example.com\msp\cacerts
 ```
 openssl x509 -in ca.org1.example.com-cert.pem -text
+Or
+keytool -printcert -file ca.org1.example.com-cert.pem
+
 ```
 
 ```
