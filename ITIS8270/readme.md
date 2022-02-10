@@ -32,7 +32,12 @@ peer chaincode invoke -o localhost:7050 --ordererTLSHostnameOverride orderer.exa
 peer chaincode query -C mychannel -n basic -c '{"Args":["GetAllAssets"]}' 
 ```
 
-# Start the Network + CA + couchdb
+# Start the Network + CA servers
+```
+ ./network.sh up createChannel -c mychannel -ca
+```
+
+# "OPTIONAL" Start the Network + CA + couchdb
 ```
  ./network.sh up createChannel -c mychannel -ca -s couchdb
 ```
