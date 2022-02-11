@@ -9,6 +9,8 @@ curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.2.2 1.4.9
 ## 2- set the env
 
 ```
+cd fabric-samples/test-network
+
 export PATH=${PWD}/../bin:$PATH
 export FABRIC_CFG_PATH=$PWD/../config/
 
@@ -27,7 +29,7 @@ export CORE_PEER_ADDRESS=localhost:7051
 
 ## 4- Deploy the CC
 ```
-chaincode application
+./network.sh deployCC -ccn basic -ccp ../asset-transfer-basic/chaincode-javascript/ -ccl javascript
 ```
 
 ## 5- Run the application
