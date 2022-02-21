@@ -12,3 +12,8 @@ To Generate the Sample crypto mateial we use generate and the previos config fil
 ```
 cryptogen generate  --config=./crypto-config.yaml
 ```
+specify the output folder for the crypto materials
+```
+cryptogen generate  --config=./crypto-config.yaml --output=./crypto-config
+```
+NOTE: for usable code make .sh file including the aove commend line.
