@@ -16,4 +16,4 @@ specify the output folder for the crypto materials
 ```
 cryptogen generate  --config=./crypto-config.yaml --output=./crypto-config
 ```
-NOTE: for usable code make .sh file including the aove commend line.
+NOTE: for usable code make .sh file including the above command line.
