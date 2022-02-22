@@ -44,13 +44,11 @@ keytool -printcert -file cert.pem
 
 ```ps
 choco install make
+choco install mingw -y
 ```
-## Use 'Make' in Windows ` Not tested
+clone the Fabric repo, in the main folder where the makefile file ,example type: 
+```
+make orderer
+````
+![image](https://user-images.githubusercontent.com/9446035/155177627-33b2acf5-575a-4227-91e1-0360b6bf0af2.png)
 
-install MinGW64
-```
-mingw-get install mingw32-make
-```
-- Install 'mingw32-make' via 'mingw-get install mingw32-make'
-- Create the file 'bin/make' with the content 'mingw32-make.exe $*'
-- Open a new shell and type 'make'
