@@ -40,10 +40,14 @@ keytool -printcert -file certificate.pem
 ```
 keytool -printcert -file cert.pem
 ```
+# Make
 
-# Use 'Make' in Windows
-install 
-MinGW64
+```ps
+choco install make
+```
+## Use 'Make' in Windows ` Not tested
+
+install MinGW64
 ```
 mingw-get install mingw32-make
 ```
