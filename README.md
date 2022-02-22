@@ -40,3 +40,13 @@ keytool -printcert -file certificate.pem
 ```
 keytool -printcert -file cert.pem
 ```
+
+# Use 'Make' in Windows
+install 
+MinGW64
+```
+mingw-get install mingw32-make
+```
+- Install 'mingw32-make' via 'mingw-get install mingw32-make'
+- Create the file 'bin/make' with the content 'mingw32-make.exe $*'
+- Open a new shell and type 'make'
