@@ -45,6 +45,7 @@ keytool -printcert -file cert.pem
 ```ps
 choco install make
 choco install mingw -y
+chocolatey install jq
 ```
 clone the Fabric repo, in the main folder where the makefile file ,example type: 
 ```
