@@ -51,6 +51,8 @@ peer chaincode query -C mychannel -n basic -c '{"Args":["GetAllAssets"]}'
 ```
 cd asset-transfer-basic/application-javascript
 npm install
+node app.js
+
 ```
 ## read the certificate
 C:\Users\1426391\Desktop\Desktop\test\fabric-samples\test-network\organizations\peerOrganizations\org1.example.com\msp\cacerts
