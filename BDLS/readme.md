@@ -13,10 +13,12 @@ $ go version
 Go: install/update
 ```
 ![image](https://user-images.githubusercontent.com/9446035/125891712-b1b0d067-46aa-47f2-a22b-47f3115662ae.png)
-After success setup 
+
+After success setup...
+
 ![image](https://user-images.githubusercontent.com/9446035/125891997-5a6be85f-0990-41ba-840d-a305c85d23a7.png)
 
-select all.
+Select all.
 3-  Ctr+Shft+p then type:
 ```
 preferences: Open Setting (JSON)
