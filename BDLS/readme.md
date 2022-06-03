@@ -47,3 +47,14 @@ bdls
 ```
 ./emucon run
 ```
+
+## run + Test
+```
+./emucon run --id 0 --listen ":4680
+./emucon run --id 1 --listen ":4681"
+./emucon run --id 2 --listen ":4682"
+./emucon run --id 3 --listen ":4683"
+
+cd ../..
+go test -v -cpuprofile=cpu.out -memprofile=mem.out -timeout 2h
+ ```
