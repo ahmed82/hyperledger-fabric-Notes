@@ -54,7 +54,8 @@ make orderer
 ![image](https://user-images.githubusercontent.com/9446035/155177627-33b2acf5-575a-4227-91e1-0360b6bf0af2.png)
 
 # Hedera Consensus Service Fabric
-## Create a hyperledger directory and navigate into that directory 
+## Create a hyperledger directory and navigate into that directory
+
 ```shell
 mkdir -p $GOPATH/src/github.com/hyperledger && cd $GOPATH/src/github.com/hyperledger
 git clone https://github.com/hyperledger-labs/pluggable-hcs fabric
