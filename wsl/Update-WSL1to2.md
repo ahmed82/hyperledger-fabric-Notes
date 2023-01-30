@@ -11,3 +11,8 @@ wsl --set-version Ubuntu 2
 ```
 
 ![image](https://user-images.githubusercontent.com/9446035/215339406-18d8e1e9-dfee-4af7-8a5b-6567110a041e.png)
+
+Set WSL 2 is a default 
+```
+wsl.exe --set-default-version 2
+```
