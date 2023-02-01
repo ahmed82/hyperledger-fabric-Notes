@@ -71,4 +71,5 @@ export PKCS11_LIB="/usr/lib/x86_64-linux-gnu/pkcs11/pkcs11-spy.so"
 *Ref: 
 1. https://wiki.opendnssec.org/display/SoftHSMDOCS/SoftHSM+Documentation+v2#SoftHSMDocumentationv2-Download
 2. https://hyperledger-fabric.readthedocs.io/en/latest/dev-setup/devenv.html
+3. https://github.com/opendnssec/SoftHSMv2
 
