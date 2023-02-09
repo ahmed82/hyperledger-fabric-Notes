@@ -1,7 +1,5 @@
 # Caliper
-Ref:
-* https://hyperledger.github.io/caliper/v0.5.0/installing-caliper/
-* https://hyperledger.github.io/caliper/v0.3.2/fabric-tutorial/tutorials-fabric-existing/
+
 
 This tutorial takes you through performance testing a smart contract on a pre-existing Fabric network using Caliper.
 
@@ -33,7 +31,7 @@ curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.4.0 1.5.2
 ```
 * If no arguments are supplied, then the arguments `docker` `binary` `samples` are assumed.
 ```shell
-./install-fabric.sh --fabric-version 2.2
+./install-fabric.sh --fabric-version 2.4
 ```
 # clone caliper-benchmarks 
 (ensure it is created inside the directory you created above)
@@ -41,12 +39,13 @@ curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.4.0 1.5.2
 git clone https://github.com/hyperledger/caliper-benchmarks
 cd caliper-benchmarks
 npm install --only=prod @hyperledger/caliper-cli
-npx caliper bind --caliper-bind-sut fabric:2.2
+npx caliper bind --caliper-bind-sut fabric:2.4
 ```
 ## Bring up the test network
 ```cnd
 cd fabric-samples/test-network
-git checkout -b release-2.2 origin/release-2.2
+git checkout -b release-2.4 origin/release-2.4
+```
 [Set environment vairiable ](https://github.com/ahmed82/hyperledger-fabric-Notes/blob/main/ITIS8270/set-env4Org1.md)
 ```
 cd fabric-samples/test-network
@@ -60,21 +59,26 @@ setx /m FABRIC_CFG_PATH %CD%\config
 setx /m FABRIC %CD%\bin
 ```
 ## Creating a channel
+```
 ./network.sh up createChannel
-## or  depend or chaincode db support (if it not support level-DB)
+```
+ If your chaincode required couchdb (if it not support level-DB)
+```
 ./network.sh up createChannel -s couchdb
 ```
 ![image](https://user-images.githubusercontent.com/9446035/217735428-9a285822-57b4-4a59-8895-7ecd97e11244.png)
 
 
 ## Starting a chaincode on the channel
+Ensure you are in the `fabric-samples/test-network` directory
+* DO NOT USE those samples NOT WORKING `./network.sh deployCC -ccn basic -ccp ../asset-transfer-basic/chaincode-go -ccl go`
+**Ref:** https://github.com/hyperledger/caliper-benchmarks/blob/main/networks/fabric/README.md#fabcar
 ```
-# DO NOT USE those samples NOT WORKING./network.sh deployCC -ccn basic -ccp ../asset-transfer-basic/chaincode-go -ccl go
 ./network.sh deployCC -ccn fabcar -ccp ../../caliper-benchmarks/src/fabric/samples/fabcar/node -ccl javascript
 ```
 # Caliper
 ## Benchmark execution
-Ensure you are in the caliper-benchmarks directory
+Ensure you are in the `caliper-benchmarks` directory
 ```
 npx caliper launch manager --caliper-workspace ./ --caliper-networkconfig networks/fabric/test-network.yaml --caliper-benchconfig benchmarks/samples/fabric/fabcar/config.yaml --caliper-flow-only-test --caliper-fabric-gateway-enabled
 ```
@@ -101,9 +105,11 @@ or
 npx caliper bind --caliper-bind-sut fabric:2.4
 ```
 
-
-https://hyperledger.github.io/caliper/v0.3.2/fabric-tutorial/tutorials-fabric-existing/
-https://hyperledger.github.io/caliper-benchmarks/ **Benchmarks of very old Hyperledger Fabric versions have now been removed.**
+Ref:
+* https://hyperledger.github.io/caliper/v0.5.0/installing-caliper/
+* https://hyperledger.github.io/caliper/v0.3.2/fabric-tutorial/tutorials-fabric-existing/
+* https://hyperledger.github.io/caliper/v0.3.2/fabric-tutorial/tutorials-fabric-existing/
+* https://hyperledger.github.io/caliper-benchmarks/ **Benchmarks of very old Hyperledger Fabric versions have now been removed.**
 
 
 
