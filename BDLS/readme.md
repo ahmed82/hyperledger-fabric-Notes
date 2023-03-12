@@ -2,13 +2,24 @@
 Download Go runtime
 https://golang.org/doc/install
 
-verify the instalation
+* GOROOT
+```
+%USERPROFILE%\Go
+```shell
+* Path
+```shell
+%GOROOT%\bin
+#or
+%USERPROFILE%\Go\bin
+%GOPATH%\bin
+```
+verify the installation
 ```
 $ go version
 ```
 1- install GO plugin in VScode
 
-2- Ctr+Shft+p then type:
+2- Ctr+Shift+p Then Type:
 ```
 Go: install/update
 ```
