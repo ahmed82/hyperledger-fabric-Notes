@@ -3,15 +3,17 @@ Download Go runtime
 https://golang.org/doc/install
 
 * GOROOT
-```
-%USERPROFILE%\Go
 ```shell
+%USERPROFILE%\Go
+```
 * Path
 ```shell
+%GOPATH%\bin
+
 %GOROOT%\bin
 #or
 %USERPROFILE%\Go\bin
-%GOPATH%\bin
+
 ```
 verify the installation
 ```
