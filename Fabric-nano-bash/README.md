@@ -51,9 +51,24 @@ externalBuilders:
 ![Terminal setup](https://github.com/BDLS-bft/fabric-samples/blob/main/test-network-nano-bash/terminal_setup.png)
 # Instructions for starting network 
 <!--cd to the `test-network-nano-bash` directory in each terminal window -->
+
 `time=Time.new() = 3:40 AM `
 
 
-//TODO 
+### Environment variable
+- cd to the `test-network-nano-bash` directory in each terminal window
+- In the first orderer terminal, run `./generate_artifacts.sh` to generate crypto material (calls cryptogen) and system and application channel genesis block and configuration transactions (calls configtxgen). The artifacts will be created in the `crypto-config` and `channel-artifacts` directories.
+
+### Orderers/Peers
+- In the three orderer terminals, run `./orderer1.sh`, `./orderer2.sh`, `./orderer3.sh` respectively
+- In the four peer terminals, run `./peer1.sh`, `./peer2.sh`, `./peer3.sh`, `./peer4.sh` respectively
+- Note that each orderer and peer write their data (including their ledgers) to their own subdirectory under the `data` directory
+
+### Admin peers
+- In the four peer admin terminals, run"
+`source peer1admin.sh && ./create_channel.sh`, 
+`source peer2admin.sh && ./join_channel.sh`, 
+`source peer3admin.sh && ./join_channel.sh`, 
+`source peer4admin.sh && ./join_channel.sh` respectively
 
 
