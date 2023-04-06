@@ -3,12 +3,15 @@
 # GOLANG
 wget https://go.dev/dl/go1.18.10.linux-amd64.tar.gz
 sudo rm -rf /usr/local/go && tar -C /usr/local -xzf go1.18.10.linux-amd64.tar.gz
-export PATH=$PATH:/usr/local/go/bin
-source $HOME/.profile
+# export PATH=$PATH:/usr/local/go/bin
 mkdir -p $HOME/go/{bin,src}
-export GOPATH=$HOME/go && export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOPATH/bin:/usr/local/go/bin
-source $HOME/.profile
+echo 'export GOROOT=/usr/local/go' >> .profile
+echo 'export GOPATH=$HOME/go' >> .profile
+echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> .profile
+source ~/.profile  #source $HOME/.profile
+go version
+go env
+
 
 sudo apt-get update
 sudo apt-get upgrade
