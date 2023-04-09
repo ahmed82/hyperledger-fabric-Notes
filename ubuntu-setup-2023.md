@@ -15,6 +15,7 @@ go env
 
 sudo apt-get update
 sudo apt-get upgrade
+sudo ubuntu-drivers autoinstall # Optional for my extention HDMI 2nd screen
 
 # build-essential
 sudo apt install build-essential && gcc --version && make --version
