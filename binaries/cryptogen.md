@@ -34,8 +34,9 @@ NOTE: for usable code make .sh file including the above command line.
 
 # Peer
 ![image](https://user-images.githubusercontent.com/9446035/220535985-ecfb1f31-8b40-45c8-b5f2-e5522137f089.png)
-
-## Extend
+-----
+# Extend 
+* for adding components to the existing setup
 ```bash
 cryptogen extend  --config=./extension-crypto-config.yaml --inpute=<<path Crypto folder>>
 ```
