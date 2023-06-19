@@ -6,9 +6,10 @@ sudo apt-get purge golang*
 sudo rm -rf /usr/local/go 
 
 ## download
-wget https://go.dev/dl/go1.18.10.linux-amd64.tar.gz
-
-sudo tar -C /usr/local -xzf go1.18.10.linux-amd64.tar.gz
+# wget https://go.dev/dl/go1.18.10.linux-amd64.tar.gz ## Archaived
+wget https://go.dev/dl/go1.20.5.linux-amd64.tar.gz
+# sudo tar -C /usr/local -xzf go1.18.10.linux-amd64.tar.gz  ## Archaived
+sudo rm -rf /usr/local/go && tar -C /usr/local -xzf go1.20.5.linux-amd64.tar.gz
 
 # export PATH=$PATH:/usr/local/go/bin
 mkdir -p $HOME/go/{bin,src}
