@@ -45,8 +45,12 @@ sudo usermod -a -G docker ahmed
 sudo apt install make libssl-dev libghc-zlib-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip -y
 
 # Fabric
+cd ~/go/src/
+
 mkdir -p github.com/BDLS-bft
-cd github.com/BDLS-bft
+mkdir -p github.com/hyperledger
+
+cd github.com/BDLS-bft/
 git clone https://github.com/BDLS-bft/fabric
 make gotools
 
