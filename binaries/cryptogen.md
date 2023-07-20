@@ -38,7 +38,7 @@ NOTE: for usable code make .sh file including the above command line.
 # Extend 
 * for adding components to the existing setup
 ```bash
-cryptogen extend  --config=./extension-crypto-config.yaml --inpute=<<path Crypto folder>>
+cryptogen extend  --config=./extension-crypto-config.yaml --input=<<path Crypto folder>>
 ```
 ![image](https://user-images.githubusercontent.com/9446035/220537014-4020be73-ba6e-4185-9af7-a6ee8b661efe.png)
 
