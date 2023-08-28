@@ -27,13 +27,12 @@ $ go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.2
 
 ```
 $ export PATH="$PATH:$(go env GOPATH)/bin"
-
 ```
 
 
 ```
-protoc --proto_path=proto proto/*.proto --go_out=pb --go-grpc_out=pb
-protoc --proto_path=proto proto/*.proto --go-grpc_out=gen
+//New generating code
+protoc --go_out=. --go_opt=paths=source_relative  --go-grpc_out=. --go-grpc_opt=paths=source_relative  *.proto
 ```
 
 * Uninstall Protobuf 
