@@ -57,12 +57,12 @@ externalBuilders:
 
 ### Environment variable
 - cd to the `test-network-nano-bash` directory in each terminal window
-- In the first orderer terminal, run `./generate_artifacts.sh` to generate crypto material (calls cryptogen) and system and application channel genesis block and configuration transactions (calls configtxgen). The artifacts will be created in the `crypto-config` and `channel-artifacts` directories.
+- In the first orderer terminal, run `./generate_artifacts.sh BFT` to generate crypto material (calls cryptogen) and system and application channel genesis block and configuration transactions (calls configtxgen). The artifacts will be created in the `crypto-config` and `channel-artifacts` directories.
 
 ### Orderers/Peers
-- In the three orderer terminals, run `./orderer1.sh`, `./orderer2.sh`, `./orderer3.sh` respectively
+- In the three orderer terminals, run `./orderer1.sh BFT `, `./orderer2.sh BFT`, `./orderer3.sh BFT`, `./orderer4.sh BFT`  respectively
 - In the four peer terminals, run `./peer1.sh`, `./peer2.sh`, `./peer3.sh`, `./peer4.sh` respectively
-- Note that each orderer and peer write their data (including their ledgers) to their own subdirectory under the `data` directory
+- Note that each orderer and peer writes their data (including their ledgers) to their own subdirectory under the `data` directory
 
 ### Admin peers
 - In the four peer admin terminals, run"
