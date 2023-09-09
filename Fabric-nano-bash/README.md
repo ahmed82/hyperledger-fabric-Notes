@@ -71,4 +71,7 @@ externalBuilders:
 `source peer3admin.sh && ./join_channel.sh`, 
 `source peer4admin.sh && ./join_channel.sh` respectively
 
-
+## Join the orderers
+```
+ ./join_orderers.sh BFT
+```
