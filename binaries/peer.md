@@ -1,12 +1,13 @@
-# peer
-Configuration by using `core.yaml`.
+# peer binary
 
-path to configuration file set in:
+The configuration file for the peer is  `core.yaml`.
+
+path to the configuration file set in:
 ```
 FABRIC_CFG_PATH
 ```
 
-configuration can be overridden by set environment variable at runtime. as:
+The configuration can be overridden, by an environment variable. as:
 ```
 CORE_...
 ```
@@ -28,7 +29,7 @@ peer channel getinfo -c mychannel
 ```
 
 
-# peer lifecycle chaincode
+## peer lifecycle chaincode
 ```
  peer lifecycle chaincode <cmd> --flag
 ```
@@ -47,7 +48,7 @@ CC_LABEL=gocc.1.0-1.0
 CC_PACKAGE_FILE=$HOME/$CC_LABEL.tar.gx
 peer lifecycle chaincode install $CC_PACKAGE_FILE
 ```
-Check the instalation:
+Check the installation:
 ```
 ls $CORE_PEER_FILESYSTEMPATH/lifecycle/chaincodes/
 ```
