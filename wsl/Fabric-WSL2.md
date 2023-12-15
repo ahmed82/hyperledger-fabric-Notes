@@ -84,6 +84,7 @@ $ source /etc/profile
 curl -OL https://golang.org/dl/go1.18.10.linux-amd64.tar.gz
 or 
 wget  https://golang.org/dl/go1.18.10.linux-amd64.tar.gz
+wget  https://go.dev/dl/go1.21.4.linux-amd64.tar.gz
 ```
 ```
 sudo tar -C /usr/local -xvf go1.18.10.linux-amd64.tar.gz
